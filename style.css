@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+body{
     background-color: rgb(96, 96, 117);
+    width: 100vw;
+    height: 100vh;
+
+}
+.container{
 
     /* border: 2px solid; */
     height: 100vh;
@@ -44,7 +49,8 @@
     width: 35%;
     border: 2px solid;
     padding: 2% ;
-    background: url(bg-images/img\ 2.jpeg)no-repeat center center/cover;
+    background: url(https://th.bing.com/th/id/OIP.9oB0DMLrQFr6X358gChFMgHaEK?w=310&h=180&c=7&r=0&o=5&dpr=1.2&pid=1.7)no-repeat center center/cover;
+    opacity: 1.3;
     border-radius: 50px;
     border: 3px solid ;
     animation: box 3s infinite;
@@ -146,7 +152,7 @@ justify-content: center;
 .child-2 div img{
     text-align: center;
     width: 60%;
-    height: 100%;
+    height: 170px;
 } 
 .child-3{
     /* margin-top: 15vh; */
@@ -172,13 +178,18 @@ justify-content: center;
 }
 
 @media(max-width:575.97px){
+    
     .child{
-        width: 80%;
-        padding: 2%;
-        
+        width: 90%;
+        padding: 5%;
     }
     .container h1{
         font-size: 2rem;
         margin-bottom: 5%;
     }
+    .child-2{
+        padding: 10px;
+        
+    }
+
 }
