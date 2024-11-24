@@ -41,6 +41,8 @@ let container = document.querySelector('.container')
             image.src = `https://www.bing.com/th/id/OGC.1619cff15261929efd0e85b7bbb2d2e1?pid=1.7&rurl=http%3a%2f%2fbestanimations.com%2fNature%2fWater%2frain%2frain-nature-animated-gif-17.gif&ehk=YaViHAKMmDPo9xqt2oBQsw47DE9Bypjy72H%2fu%2f1LaxA%3d`
         }else if(weathercond == 'Sunny'){
             image.src = `https://www.bing.com/th/id/OGC.4dc9630c964603cf58cbb20cdec919da?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fQ5jq8b6BvEtjbcXhlg%2fgiphy.gif&ehk=NdItdUzeWVDLqPnI4WjO7fC5eD3rxTIITXbCN%2bxgPcI%3d`
+        }else if(weathercond == 'Smoke'){
+            image.src = `https://www.bing.com/th/id/OGC.e723c1910c83f74738e207240c26d8a4?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fpF88GWa3H9lh6%2fgiphy.gif&ehk=%2bX3bi4j%2bTfNkTxl9vDMSZ1EFFKFncUBmUOVMJmqnq2I%3d`
         }
         cityname.innerText = `Weather of (${ans[11]})`
         feellike.innerText = `feels_like : ${feel}`
