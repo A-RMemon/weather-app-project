@@ -28,21 +28,23 @@ let container = document.querySelector('.container')
         let feel  = Math.floor(ans[3].feels_like)
         let weathercond = ans[1][0].main
         if(weathercond == 'Clouds'){
-            image.src = `https://media.giphy.com/media/HqeOAdFHx74be/giphy.gif`
+            image.src = `https://cdn-icons-gif.flaticon.com/17102/17102874.gif`
         }else if(weathercond == 'Snow'){
-            image.src = `https://media.giphy.com/media/lwmsEtDZhYWpW/giphy.gif`
+            image.src = `https://cdn-icons-gif.flaticon.com/6454/6454998.gif`
+        }else if(weathercond == 'wind'){
+            image.src = `https://media.lordicon.com/icons/wired/flat/812-wind.gif`
         }else if(weathercond == 'Clear'){
-            image.src = `https://media3.giphy.com/media/G1T5M0qT6ZJlu/giphy.gif`
+            image.src = `https://cdn-icons-gif.flaticon.com/6455/6455053.gif`
         }else if(weathercond == 'Haze'){
-            image.src = `https://i.gifer.com/origin/8d/8d1c415cc7016510e1578b3b300a3ce2_w200.gif`
+            image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3RpamQqK4DyQ81nMF-TdgW1N-91TaEL7dA&s`
         }else if(weathercond == 'Mist'){
-            image.src =`https://www.bing.com/th/id/OGC.ea485d0f98c9c44f52246e4ae5e248e3?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2f3nQWWe5X1PD8s%2fgiphy.gif&ehk=k%2b5Ff51nllJykGOK%2brQ4%2b6nibIVcFSrc21n3uKqQN9M%3d`
+            image.src =`https://media.lordicon.com/icons/wired/flat/812-wind.gif`
         }else if(weathercond == 'Rain'){
-            image.src = `https://www.bing.com/th/id/OGC.1619cff15261929efd0e85b7bbb2d2e1?pid=1.7&rurl=http%3a%2f%2fbestanimations.com%2fNature%2fWater%2frain%2frain-nature-animated-gif-17.gif&ehk=YaViHAKMmDPo9xqt2oBQsw47DE9Bypjy72H%2fu%2f1LaxA%3d`
+            image.src = `https://cdn.dribbble.com/users/2120934/screenshots/6193512/11_rain.gif`
         }else if(weathercond == 'Sunny'){
-            image.src = `https://www.bing.com/th/id/OGC.4dc9630c964603cf58cbb20cdec919da?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fQ5jq8b6BvEtjbcXhlg%2fgiphy.gif&ehk=NdItdUzeWVDLqPnI4WjO7fC5eD3rxTIITXbCN%2bxgPcI%3d`
+            image.src = `https://cdn.dribbble.com/users/622977/screenshots/6473478/weather-test-4.gif`
         }else if(weathercond == 'Smoke'){
-            image.src = `https://www.bing.com/th/id/OGC.e723c1910c83f74738e207240c26d8a4?pid=1.7&rurl=https%3a%2f%2fmedia.giphy.com%2fmedia%2fpF88GWa3H9lh6%2fgiphy.gif&ehk=%2bX3bi4j%2bTfNkTxl9vDMSZ1EFFKFncUBmUOVMJmqnq2I%3d`
+            image.src = `https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3RpamQqK4DyQ81nMF-TdgW1N-91TaEL7dA&s`
         }
         cityname.innerText = `Weather of (${ans[11]})`
         feellike.innerText = `feels_like : ${feel}`
@@ -53,6 +55,7 @@ let container = document.querySelector('.container')
         child2.style.display = 'block';
         container.style.height = 'auto'
         input.value="";
+        input.focus()
         fetch 
     }).catch((e)=>{
         alert('this place is not found');
